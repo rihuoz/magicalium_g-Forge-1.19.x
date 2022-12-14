@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "magicalium_g:block/bituminous_coal_block"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "magicalium_g:block/ore_block",
+  "textures": {
+    "base": "minecraft:block/deepslate",
+    "overlay": "magicalium_g:block/overlay/telluric_iron"
+  }
+}

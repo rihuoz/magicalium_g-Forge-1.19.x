@@ -1,0 +1,9 @@
+{
+  "type": "magicalium_g:boiling",
+  "ingredients": [
+    {
+      "item": "magicalium_g:lignite_coal"
+    }
+  ],
+  "output": "magicalium_g:anthracite_coal"
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "magicalium_g:block/bronze_bench" },
+    "facing=east": { "model": "magicalium_g:block/bronze_bench", "y": 90 },
+    "facing=south": { "model": "magicalium_g:block/bronze_bench", "y": 180 },
+    "facing=west": { "model": "magicalium_g:block/bronze_bench", "y": 270 }
+  }
+}

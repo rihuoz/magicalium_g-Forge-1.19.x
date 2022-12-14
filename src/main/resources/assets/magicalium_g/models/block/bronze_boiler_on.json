@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "magicalium_g:block/bronze_side",
+    "front": "magicalium_g:block/machine/bronze_boiler_front_on",
+    "side": "magicalium_g:block/bronze_side"
+  }
+}

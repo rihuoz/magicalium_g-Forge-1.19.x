@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "magicalium_g:item/tool/stone_hammer"
+  }
+}

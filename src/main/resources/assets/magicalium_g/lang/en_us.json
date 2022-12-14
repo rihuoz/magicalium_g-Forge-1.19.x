@@ -1,0 +1,48 @@
+{
+  "item.magicalium_g.steam_bucket": "Steam Bucket",
+
+  "item.magicalium_g.stone_hammer": "Stone Hammer",
+  "item.magicalium_g.iron_hammer": "Iron Hammer",
+
+  "item.magicalium_g.lignite_coal": "Lignite Coal",
+  "item.magicalium_g.bituminous_coal": "Bituminous Coal",
+  "item.magicalium_g.anthracite_coal": "Anthracite Coal",
+
+  "block.magicalium_g.bronze_boiler": "Bronze Boiler",
+
+  "block.magicalium_g.bronze_bench": "Bronze Bench",
+
+  "block.magicalium_g.test_ol_block": "Test Overlay Block",
+  "block.magicalium_g.lignite_coal_block": "Lignite Coal Block",
+  "block.magicalium_g.bituminous_coal_block": "Bituminous Coal Block",
+  "block.magicalium_g.anthracite_coal_block": "Anthracite Coal Block",
+
+
+  "block.magicalium_g.lignite_coal_ore": "Lignite Coal Ore",
+  "block.magicalium_g.bituminous_coal_ore": "Bituminous Coal Ore",
+  "block.magicalium_g.anthracite_coal_ore": "Anthracite Coal Ore",
+  "block.magicalium_g.magnetite_ore": "Magnetite Ore",
+  "block.magicalium_g.telluric_iron_ore": "Telluric Iron Ore",
+  "block.magicalium_g.vanadium_magnetite_ore": "Vanadium Magnetite Ore",
+  "block.magicalium_g.brown_limonite_ore": "Brown Limonite Ore",
+  "block.magicalium_g.yellow_limonite_ore": "Yellow Limonite Ore",
+  "block.magicalium_g.banded_iron_ore": "Banded Iron Ore",
+
+
+  "block.magicalium_g.deepslate_lignite_coal_ore": "Deepslate Lignite Coal Ore",
+  "block.magicalium_g.deepslate_bituminous_coal_ore": "Deepslate Bituminous Coal Ore",
+  "block.magicalium_g.deepslate_anthracite_coal_ore": "Deepslate Anthracite Coal Ore",
+  "block.magicalium_g.deepslate_magnetite_ore": "Deepslate Magnetite Ore",
+  "block.magicalium_g.deepslate_telluric_iron_ore": "Deepslate Telluric Iron Ore",
+  "block.magicalium_g.deepslate_vanadium_magnetite_ore": "Deepslate Vanadium Magnetite Ore",
+  "block.magicalium_g.deepslate_brown_limonite_ore": "Deepslate Brown Limonite Ore",
+  "block.magicalium_g.deepslate_yellow_limonite_ore": "Deepslate Yellow Limonite Ore",
+  "block.magicalium_g.deepslate_banded_iron_ore": "Deepslate Banded Iron Ore",
+
+  "container.magicalium_g.boiler": "Boiler",
+
+  "itemGroup.magicalium_g_ores": "Magicalium_g Ores",
+  "itemGroup.magicalium_g_materials": "Magicalium_g Materials",
+  "itemGroup.magicalium_g_machines": "Magicalium_g Machines",
+  "itemGroup.magicalium_g_tools": "Magicalium_g Tools"
+}

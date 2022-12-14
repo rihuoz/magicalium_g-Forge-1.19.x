@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "magicalium_g:lignite_coal_ore",
+    "magicalium_g:bituminous_coal_ore",
+    "magicalium_g:anthracite_coal_ore",
+    "magicalium_g:magnetite_ore",
+    "magicalium_g:telluric_iron_ore",
+    "magicalium_g:vanadium_magnetite_ore",
+    "magicalium_g:brown_limonite_ore",
+    "magicalium_g:yellow_limonite_ore",
+    "magicalium_g:banded_iron_ore"
+  ]
+}

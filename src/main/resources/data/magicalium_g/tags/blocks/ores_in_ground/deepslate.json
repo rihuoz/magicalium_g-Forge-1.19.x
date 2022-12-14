@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "magicalium_g:deepslate_lignite_coal_ore",
+    "magicalium_g:deepslate_bituminous_coal_ore",
+    "magicalium_g:deepslate_anthracite_coal_ore",
+    "magicalium_g:deepslate_magnetite_ore",
+    "magicalium_g:deepslate_telluric_iron_ore",
+    "magicalium_g:deepslate_vanadium_magnetite_ore",
+    "magicalium_g:deepslate_brown_limonite_ore",
+    "magicalium_g:deepslate_yellow_limonite_ore",
+    "magicalium_g:deepslate_banded_iron_ore"
+  ]
+}
