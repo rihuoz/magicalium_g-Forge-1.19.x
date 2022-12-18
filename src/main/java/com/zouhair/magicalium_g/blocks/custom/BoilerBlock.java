@@ -28,7 +28,7 @@ public class BoilerBlock extends BaseEntityBlock {
 
     public BoilerBlock(Properties pProperties) {
         super(pProperties.lightLevel(state -> {
-            return state.getValue(LIT) == true ? 15 : 0;
+            return state.getValue(LIT) ? 15 : 0;
         }));
 
 

@@ -3,6 +3,7 @@ package com.zouhair.magicalium_g.screens;
 import com.zouhair.magicalium_g.blocks.InitBlocks;
 import com.zouhair.magicalium_g.blocks.entity.custom.BoilerBlockEntity;
 import com.zouhair.magicalium_g.screens.slot.ResultSlot;
+import net.minecraft.commands.arguments.coordinates.Coordinates;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -10,13 +11,18 @@ import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
+
+import static com.zouhair.magicalium_g.blocks.entity.custom.BoilerBlockEntity.*;
 
 public class BoilerMenu extends AbstractContainerMenu {
     private final BoilerBlockEntity blockEntity;
     private final Level level;
     private final ContainerData data;
+    private FluidStack water;
+    private FluidStack steam;
 
     public BoilerMenu(int pContainerId, Inventory inventory, FriendlyByteBuf extraData) {
         this(pContainerId, inventory, inventory.player.level.getBlockEntity(extraData.readBlockPos()),
@@ -30,18 +36,36 @@ public class BoilerMenu extends AbstractContainerMenu {
         blockEntity = (BoilerBlockEntity) entity;
         this.level = inventory.player.level;
         this.data = data;
+        this.water = blockEntity.fluidTankHandler.getFluidInTank(WATER_TANK);
+        this.steam = blockEntity.fluidTankHandler.getFluidInTank(STEAM_TANK);
 
         addPlayerInventory(inventory);
         addPlayerHotbar(inventory);
 
         this.blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(itemHandler -> {
-            this.addSlot(new SlotItemHandler(itemHandler, 0, 30, 20));
-            this.addSlot(new SlotItemHandler(itemHandler, 1, 30, 55));
+            // to add check if the item in slot BUCKET_SLOT has the FLUID_ITEM_HANDLER_CAP
+            this.addSlot(new SlotItemHandler(itemHandler, BUCKET_SLOT, 25, 18));
+            this.addSlot(new SlotItemHandler(itemHandler, FUEL_SLOT, 134, 53));
 
-            this.addSlot(new ResultSlot(itemHandler, 2, 116, 20));
+            this.addSlot(new ResultSlot(itemHandler, ASH_SLOT, 134, 18));
         });
         addDataSlots(data);
 
+    }
+
+    public void setFluidInTank(int tank, FluidStack fluidStack) {
+        if (tank == WATER_TANK)
+            this.water = fluidStack;
+        if (tank == STEAM_TANK)
+            this.steam = fluidStack;
+    }
+
+    public FluidStack getFluidStackInTank(int tank) {
+        if (tank == WATER_TANK)
+            return this.water;
+        if (tank == STEAM_TANK)
+            return this.steam;
+        return FluidStack.EMPTY;
     }
 
 
@@ -108,4 +132,9 @@ public class BoilerMenu extends AbstractContainerMenu {
             this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 144));
         }
     }
+
+    public BlockEntity getBlockEntity() {
+        return this.blockEntity;
+    }
+
 }

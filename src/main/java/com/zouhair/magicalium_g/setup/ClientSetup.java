@@ -11,7 +11,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 public class ClientSetup {
     public static void init(final FMLClientSetupEvent event) {
-        ItemBlockRenderTypes.setRenderLayer(InitBlocks.BRONZE_BENCH.get(), RenderType.cutout());
+        // ItemBlockRenderTypes.setRenderLayer(InitBlocks.BRONZE_BENCH.get(), RenderType.cutout());
 
         setRenderLayerTranslucent();
 
@@ -22,6 +22,7 @@ public class ClientSetup {
         ItemBlockRenderTypes.setRenderLayer(InitFluids.SOURCE_STEAM.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(InitFluids.FLOWING_STEAM.get(), RenderType.translucent());
 
+        /*
         ItemBlockRenderTypes.setRenderLayer(InitBlocks.ANTHRACITE_COAL_ORE.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(InitBlocks.BITUMINOUS_COAL_ORE.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(InitBlocks.LIGNITE_COAL_ORE.get(), RenderType.translucent());
@@ -42,5 +43,6 @@ public class ClientSetup {
         ItemBlockRenderTypes.setRenderLayer(InitBlocks.DEEPSLATE_YELLOW_LIMONITE_ORE.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(InitBlocks.DEEPSLATE_BANDED_IRON_ORE.get(), RenderType.translucent());
 
+         */
     }
 }

@@ -2,7 +2,7 @@ package com.zouhair.magicalium_g;
 
 import com.zouhair.magicalium_g.setup.ClientSetup;
 import com.zouhair.magicalium_g.setup.InitRegister;
-import com.zouhair.magicalium_g.setup.ModSetup;
+import com.zouhair.magicalium_g.setup.CommonSetup;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,7 +22,7 @@ public class Magicalium_g
 
         InitRegister.init(eventBus);
 
-        eventBus.addListener(ModSetup::init);
+        eventBus.addListener(CommonSetup::init);
         eventBus.addListener(ClientSetup::init);
 
 

@@ -1,4 +1,7 @@
 {
+ "magicalium_g.tooltip.liquid.amount.with.capacity": "%s / %s mB",
+  "magicalium_g.tooltip.liquid.amount": "%s mB",
+
   "item.magicalium_g.steam_bucket": "Steam Bucket",
 
   "item.magicalium_g.stone_hammer": "Stone Hammer",
